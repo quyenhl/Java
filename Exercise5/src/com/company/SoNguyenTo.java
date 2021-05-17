@@ -96,11 +96,14 @@ static void useForwith100() {
 
         do{
             if(checkSoNguyenTo(i)) {
-                System.out.println(i + "\t");
+                System.out.println(i + "\t" );
 
                 i++;
+
+
             }
         }
         while (count <100);
+
     }
 }
