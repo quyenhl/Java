@@ -76,21 +76,22 @@ static void useForwith100() {
 }
     static void useWhilewith100(){
 
-        int count=0;
+
         int  i = 2;
 
-        while (count <100){
+        while (i <100){
             if (checkSoNguyenTo(i)){
                 System.out.println(i + "\t");
-                count ++;
+                i++;
             }
-           i++;
+            i++;
+
         }
 
     }
     static void useDoWhilewith100(){
 
-        int count=0;
+
         int  i = 2;
 
 
@@ -98,12 +99,10 @@ static void useForwith100() {
             if(checkSoNguyenTo(i)) {
                 System.out.println(i + "\t" );
 
-                i++;
-
-
             }
+            i++;
         }
-        while (count <100);
+        while (i <100);
 
     }
 }
