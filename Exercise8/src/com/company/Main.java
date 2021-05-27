@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+         //  Nhập và in Ma trận vuông
         int soDong, soCot;
         int sum = 0;
 
@@ -30,39 +30,18 @@ public class Main {
             }
             System.out.println("\n");
         }
+         // In đường chéo chính và tính tổng
+        DuongCheoChinh  dc = new DuongCheoChinh();
+        dc.InDuongCheoChinh(Arr, soDong,soCot);
 
-        System.out.println("Đường chéo chính là: ");
-        for (int i=0;i <soDong;i++){
-            for (int j =0;j <soCot;j++){
-                if( i ==j){
-                System.out.print(Arr[i][j] + "\t");
-               sum = sum + Arr[i][j];}
-            }
+        // In và sắp xếp hàng 2 matran
+        SortArr sort = new SortArr();
+        sort.sortArr(Arr);
+//
 
-        }
 
-        System.out.println("Tổng đường chéo chính là : " + sum);
-        int temp =0;
-        for (int i = 0; i < Arr.length-1;i++){
-            for (int j= i+1;j<Arr.length;j++)
-            if(Arr[1][j]<Arr[1][i]){
-                temp = Arr[1][j];
-                Arr[1][j] = Arr[1][i];
-                Arr[1][i]= temp;
-
-            }
-        }
-
-        for (int i = 1; i<Arr.length;i++){
-            for(int j = 0; j<Arr.length; j++){
-                if(i==1) {
-
-                    System.out.print(Arr[i][j] + " ");
-                }
-            }
-        }
-//        System.out.println("Tổng đường chéo chính là : " + sum);
 
     }
+
 
 }
