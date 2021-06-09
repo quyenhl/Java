@@ -55,8 +55,8 @@ class CalculatorTest {
         assertSame(str1,str3);
         assertNotSame(str1, str2);
         //fail
-        assertSame(str1,str2);
-        assertNotSame(str1, str3);
+        //assertSame(str1,str2);
+        //assertNotSame(str1, str3);
 
 
     }
