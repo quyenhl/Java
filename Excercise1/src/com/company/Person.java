@@ -1,9 +1,9 @@
 package com.company;
 
 public class Person {
-    //Unique key dùng để xác định đối tượng
-    private String firstName; //Họ
-    private String lastName;  //Tên
+
+    private String firstName;
+    private String lastName;
     private String job;
 
     public Person(String firstName, String lastName, String job) {
@@ -25,13 +25,13 @@ public class Person {
     public String getLastName() {
         return lastName.substring(0, 1).toUpperCase() + lastName.substring(1);
     }
-    //Tìm Cường, cường, CƯờng, CưỜng, CườNg, CườnG
+
     public void setLastName(String lastName) {
         this.lastName = lastName.toLowerCase();
     }
 
     public String getFullName() {  //getter method
-        return getFirstName() + " " + getLastName();
+        return getLastName() + " " + getFirstName();
     }
 
     public void setFullName(String fullName) {
