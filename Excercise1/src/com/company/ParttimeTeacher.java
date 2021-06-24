@@ -1,6 +1,10 @@
 package com.company;
 
-public class ParttimeTeacher implements ISpeak,ITeach{
+public class ParttimeTeacher extends Person implements ISpeak,ITeach{
+    public ParttimeTeacher(String firstName, String lastName, String job) {
+        super(firstName, lastName, job);
+    }
+
     @Override
     public void speak() {
 
