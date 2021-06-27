@@ -39,12 +39,6 @@ public class Main {
         System.out.println("1.4 In ra màn hình đánh giá tuổi mỗi người");
         checkByAge(people);
 
-
-
-
-
-
-
     }
     public static void countPeopleByNationality( ArrayList<Person> people){
         Map<String, Integer> map = new HashMap<String, Integer>();
@@ -65,7 +59,6 @@ public class Main {
             String value = map.get(qt).toString();
             System.out.println("- "+ key + ": " + value);
         }
-
 
 
     }
